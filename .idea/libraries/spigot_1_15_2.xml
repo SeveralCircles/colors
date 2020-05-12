@@ -1,11 +1,16 @@
 <component name="libraryTable">
   <library name="spigot-1.15.2">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Desktop/spigot-1.15.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/spigot-1.15.2.jar!/" />
+      <root url="file://$USER_HOME$/Downloads" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/Desktop/spigot-1.15.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/spigot-1.15.2.jar!/" />
+      <root url="file://$USER_HOME$/Downloads" />
+      <root url="file://$USER_HOME$/Downloads/morgan/source" />
     </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Downloads" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads" recursive="false" type="SOURCES" />
   </library>
 </component>
