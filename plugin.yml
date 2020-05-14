@@ -12,3 +12,7 @@ commands:
   persona:
     description: Spams chat down with "Joker Persona" 3000 times.
     usage: /<command>
+
+  sans:
+    description: Spawns a skeleton.
+    usage: /<command>
