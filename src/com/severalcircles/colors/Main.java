@@ -11,7 +11,7 @@ public class Main extends JavaPlugin {
         System.out.println("Enabling commands...");
         this.getCommand("about").setExecutor(new CommandAbout());
         this.getCommand("persona").setExecutor(new CommandPersona());
-        this.getCommand("help").setExecutor(new CommandNedry());
+        this.getCommand("access").setExecutor(new CommandNedry());
     }
 
     @Override
