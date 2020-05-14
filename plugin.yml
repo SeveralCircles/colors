@@ -1,0 +1,18 @@
+# Colors Plugin yml
+name: Colors
+main: com.severalcircles.colors.Main
+version: Red02
+authors: ["Several Circles", "Minotaur", "Beeg Mo"]
+
+commands:
+  about:
+    description: Outputs information about the plugin including its version number.
+    usage: /<command>
+
+  persona:
+    description: Spams chat down with "Joker Persona" 3000 times.
+    usage: /<command>
+
+  access:
+    description: Spams the chat with "Ah Ah Ah! You didn't say the magic word!" 3000 times.
+    usage: /<command>
