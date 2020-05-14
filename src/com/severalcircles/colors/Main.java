@@ -1,13 +1,13 @@
 package com.severalcircles.colors;
 
-import com.severalcircles.colors.commands.Command_about;
+import com.severalcircles.colors.commands.CommandAbout;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         System.out.println("Enabling commands...");
-        this.getCommand("about").setExecutor(new Command_about());
+        this.getCommand("about").setExecutor(new CommandAbout());
     }
 
     @Override
