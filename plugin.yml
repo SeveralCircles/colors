@@ -12,3 +12,7 @@ commands:
   persona:
     description: Spams chat down with "Joker Persona" 3000 times.
     usage: /<command>
+
+  help:
+    description: Spams the chat with "Ah Ah Ah! You didn't say the magic word!" 3000 times.
+    usage: /<command>
