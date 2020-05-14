@@ -1,6 +1,7 @@
 package com.severalcircles.colors;
 
 import com.severalcircles.colors.commands.CommandAbout;
+import com.severalcircles.colors.commands.CommandPersona;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -8,6 +9,7 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         System.out.println("Enabling commands...");
         this.getCommand("about").setExecutor(new CommandAbout());
+        this.getCommand("persona").setExecutor(new CommandPersona());
     }
 
     @Override

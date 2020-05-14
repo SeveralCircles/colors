@@ -8,3 +8,7 @@ commands:
   about:
     description: Outputs information about the plugin including its version number.
     usage: /<command>
+
+  persona:
+    description: Spams chat down with "Joker Persona" 3000 times.
+    usage: /<command>
