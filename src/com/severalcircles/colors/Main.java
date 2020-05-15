@@ -3,6 +3,7 @@ package com.severalcircles.colors;
 import com.severalcircles.colors.commands.CommandAbout;
 import com.severalcircles.colors.commands.CommandNedry;
 import com.severalcircles.colors.commands.CommandPersona;
+import com.severalcircles.colors.events.ChatEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -30,6 +31,7 @@ public class Main extends JavaPlugin {
         this.getCommand("about").setExecutor(new CommandAbout());
         this.getCommand("persona").setExecutor(new CommandPersona());
         this.getCommand("access").setExecutor(new CommandNedry());
+        getServer().getPluginManager().registerEvents(new ChatEvent(), this);
     }
 
     @Override
