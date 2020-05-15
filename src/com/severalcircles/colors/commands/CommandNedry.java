@@ -12,17 +12,10 @@ public class CommandNedry implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {
         boolean isPlayer = true;
-        Player player = null;
-        try {
-            player = (Player) commandSender;
-        } catch (ClassCastException e) {
-            isPlayer = false;
-        }
+        Player player = (Player) commandSender;
         Player target = Bukkit.getPlayer(args[0]);
         if (target == null) {
-            if (isPlayer) {
-                player.sendMessage("Player not found");
-            }
+            player.sendMessage("Player not found");
             System.out.println("Player not found");
             return true;
         }
