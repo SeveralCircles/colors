@@ -11,17 +11,32 @@ import org.bukkit.entity.Player;
 public class CommandNedry implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {
-        Player player = (Player) commandSender;
-        Player target = Bukkit.getPlayer(args[0]);
-        if (!player.hasPermission("com.severalcircles.colors.magicword")) {
-            player.sendMessage(ChatColor.YELLOW + "Ah Ah Ah! You didn't say the magic word!");
+        boolean isPlayer = true;
+        Player player = null;
+        try {
+            player = (Player) commandSender;
+        } catch (ClassCastException e) {
+            isPlayer = false;
         }
-        player.getWorld().spawnEntity(player.getLocation(), EntityType.);
-        player.getWorld().spawnEntity(player.getLocation(), EntityType.PRIMED_TNT);
-        player.getWorld().spawnEntity(player.getLocation(), EntityType.PRIMED_TNT);
+        Player target = Bukkit.getPlayer(args[0]);
+        if (target == null) {
+            if (isPlayer) {
+                player.sendMessage("Player not found");
+            }
+            System.out.println("Player not found");
+            return true;
+        }
+        if (isPlayer) {
+            if (!player.hasPermission("com.severalcircles.colors.magicword")) {
+                player.sendMessage(ChatColor.YELLOW + "Ah Ah Ah! You didn't say the magic word!");
+            }
+        }
+        target.getWorld().spawnEntity(player.getLocation(), EntityType.PRIMED_TNT);
+        target.getWorld().spawnEntity(player.getLocation(), EntityType.PRIMED_TNT);
+        target.getWorld().spawnEntity(player.getLocation(), EntityType.PRIMED_TNT);
         int chatspam = 0;
         while (chatspam < 3000) {
-            player.sendMessage(ChatColor.YELLOW + "Ah Ah Ah! You didn't say the magic word!");
+            target.sendMessage(ChatColor.YELLOW + "Ah Ah Ah! You didn't say the magic word!");
             chatspam++;
         }
         return true;
