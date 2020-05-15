@@ -14,7 +14,7 @@ commands:
     usage: /<command>
 
   access:
-    description: Spams the chat with "Ah Ah Ah! You didn't say the magic word!" 3000 times and spawns 3 primed tnt.
+    description: Spams the chat with "Ah Ah Ah! You didn't say the magic word!" 69 times and spawns 3 primed tnt.
     usage: /<command>
 permissions:
   com.severalcircles.colors.*:
@@ -25,3 +25,7 @@ permissions:
   com.severalcircles.colors.magicword:
     description: Allows you to say the magic word
     default: op
+
+    doomsday:
+      description: Spawns 69 Wither at players location.
+      usage: /<command>
