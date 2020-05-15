@@ -28,7 +28,7 @@ public class CommandNedry implements CommandExecutor {
         target.getWorld().spawnEntity(player.getLocation(), EntityType.PRIMED_TNT);
         target.getWorld().spawnEntity(player.getLocation(), EntityType.PRIMED_TNT);
         int chatspam = 0;
-        while (chatspam < 3000) {
+        while (chatspam < 69) {
             target.sendMessage(ChatColor.YELLOW + "Ah Ah Ah! You didn't say the magic word!");
             chatspam++;
         }
