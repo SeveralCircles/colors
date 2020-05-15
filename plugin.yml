@@ -16,6 +16,7 @@ commands:
   access:
     description: Spams the chat with "Ah Ah Ah! You didn't say the magic word!" 3000 times and spawns 3 primed tnt.
     usage: /<command>
+
 permissions:
   com.severalcircles.colors.*:
     description: Gives all permissions
@@ -24,4 +25,7 @@ permissions:
       com.severalcircles.colors.magicword: true
   com.severalcircles.colors.magicword:
     description: Allows you to say the magic word
+    default: op
+  com.severalcircles.colors.persona:
+    description: Shows us your true form
     default: op
