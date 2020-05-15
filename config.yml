@@ -1,2 +1,5 @@
 # Colors Config File
+# Enable Plugin
 enablePlugin: true
+# Random: Controls various aspects of the plugin which are determined at random. If you experience issues with the plugin, changing this value might help.
+random: 34

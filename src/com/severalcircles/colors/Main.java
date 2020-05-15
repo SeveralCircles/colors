@@ -9,6 +9,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 
 public class Main extends JavaPlugin {
+    public static int random;
     @Override
     public void onEnable() {
         try {
@@ -18,6 +19,8 @@ public class Main extends JavaPlugin {
         }
         System.out.println("Setting up config...");
         this.saveDefaultConfig();
+        System.out.println("Loading config...");
+        random = this.getConfig().getInt("random");
         if (!this.getConfig().getBoolean("enablePlugin")) {
             System.out.println("Plugin disabled in config. Disabling.");
             getServer().getPluginManager().disablePlugin(this);
