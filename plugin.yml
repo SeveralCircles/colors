@@ -14,5 +14,5 @@ commands:
     usage: /<command>
 
   access:
-    description: Spams the chat with "Ah Ah Ah! You didn't say the magic word!" 3000 times.
+    description: Spams the chat with "Ah Ah Ah! You didn't say the magic word!" 3000 times and spawns 3 primed tnt.
     usage: /<command>
