@@ -1,6 +1,7 @@
 package com.severalcircles.colors;
 
 import com.severalcircles.colors.commands.CommandAbout;
+import com.severalcircles.colors.commands.CommandDoomsday;
 import com.severalcircles.colors.commands.CommandNedry;
 import com.severalcircles.colors.commands.CommandPersona;
 import com.severalcircles.colors.events.ChatEvent;
@@ -31,6 +32,7 @@ public class Main extends JavaPlugin {
         this.getCommand("about").setExecutor(new CommandAbout());
         this.getCommand("persona").setExecutor(new CommandPersona());
         this.getCommand("access").setExecutor(new CommandNedry());
+        this.getCommand("doomsday").setExecutor(new CommandDoomsday());
         getServer().getPluginManager().registerEvents(new ChatEvent(), this);
     }
 
