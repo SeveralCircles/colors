@@ -1,8 +1,11 @@
-package com.severalcircles.colors;
+package com.severalcircles.colors.system;
 
 import com.severalcircles.colors.commands.CommandAbout;
 import com.severalcircles.colors.commands.CommandNedry;
 import com.severalcircles.colors.commands.CommandPersona;
+import com.severalcircles.colors.system.protection.ProtectionCheck;
+import com.severalcircles.colors.system.protection.ProtectionCheckFailException;
+import com.severalcircles.colors.system.protection.RunViaSpigot;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -11,8 +14,26 @@ import java.net.URL;
 
 public class Main extends JavaPlugin {
     public static int random;
+
+    public static void main(String[] args) {
+        try {
+            throw new ProtectionCheckFailException(new RunViaSpigot());
+        } catch (ProtectionCheckFailException e) {
+            System.out.println("System protection check failed. Exiting.");
+            System.exit(69);
+        }
+    }
+
     @Override
     public void onEnable() {
+        try {
+            ProtectionCheck.runChecks();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } catch (ProtectionCheckFailException e) {
+            System.out.println("System protection check failed. Disabling.");
+            getServer().getPluginManager().disablePlugin(this);
+        }
         try {
             System.out.println("Build number: " + classBuildTimeMillis());
         } catch (URISyntaxException e) {
