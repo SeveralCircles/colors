@@ -16,3 +16,8 @@ commands:
   sans:
     description: Spawns a skeleton on a player.
     usage: /<command> <player>
+
+permissions:
+  com.severalcircles.colors.sans:
+    description: Allows you to give a player a bad time by sending a skeleton to their position because it's funny sans.
+    default: op

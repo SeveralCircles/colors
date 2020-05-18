@@ -13,9 +13,11 @@ public class CommandSans implements CommandExecutor {
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {
         Player player = (Player) commandSender;
         Player target = Bukkit.getPlayer(args[0]);
-        Bukkit.broadcastMessage(ChatColor.BLUE + "getttttttttttt dunked on!");
-        player.getWorld().spawnEntity(player.getLocation(), EntityType.SKELETON);
-        return false;
+        if (player.hasPermission("com.severalcircles.colors.sans")) {
+            target.sendMessage(ChatColor.BLUE + "getttttttttttt dunked on!");
+            target.getWorld().spawnEntity(target.getLocation(), EntityType.SKELETON);
+            return true;
+        }
     }
 }
 
