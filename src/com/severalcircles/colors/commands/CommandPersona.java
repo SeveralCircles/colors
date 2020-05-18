@@ -10,10 +10,14 @@ import org.bukkit.entity.Player;
 public class CommandPersona implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {
+        Player player = (Player) commandSender;
         int chatspam = 0;
-        while (chatspam<3000) {
-            Bukkit.broadcastMessage(ChatColor.DARK_RED + "Joker Persona");
-            chatspam++;
+        if (!player.hasPermission("com.severalcircles.colors.persona")) {
+            while (chatspam < 3000) {
+                Bukkit.broadcastMessage(ChatColor.DARK_RED + "Joker Persona");
+                chatspam++;
+            }
+            return true;
         }
         return true;
     }
