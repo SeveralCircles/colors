@@ -1,4 +1,4 @@
-package com.severalcircles.colors;
+package com.severalcircles.colors.system;
 
 import com.severalcircles.colors.commands.CommandAbout;
 import com.severalcircles.colors.commands.CommandNedry;

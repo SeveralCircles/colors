@@ -1,6 +1,6 @@
 # Colors Plugin yml
 name: Colors
-main: com.severalcircles.colors.Main
+main: com.severalcircles.colors.system.Main
 version: Red02
 authors: ["Several Circles", "Minotaur", "Beeg Mo"]
 

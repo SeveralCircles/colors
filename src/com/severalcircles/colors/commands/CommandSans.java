@@ -18,6 +18,7 @@ public class CommandSans implements CommandExecutor {
             target.getWorld().spawnEntity(target.getLocation(), EntityType.SKELETON);
             return true;
         }
+        return true;
     }
 }
 
