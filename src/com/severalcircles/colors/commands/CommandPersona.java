@@ -12,7 +12,7 @@ public class CommandPersona implements CommandExecutor {
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {
         Player player = (Player) commandSender;
         int chatspam = 0;
-        if (!player.hasPermission("com.severalcircles.colors.persona")) {
+        if (player.hasPermission("com.severalcircles.colors.persona")) {
             while (chatspam < 3000) {
                 Bukkit.broadcastMessage(ChatColor.DARK_RED + "Joker Persona");
                 chatspam++;
