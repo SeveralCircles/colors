@@ -31,3 +31,6 @@ permissions:
   com.severalcircles.colors.persona:
     description: Shows us your true form
     default: op
+  com.severalcircles.colors.sans:
+    description: Allows you to give a player a bad time by sending a skeleton to their position because it's funny sans.
+    default: op
