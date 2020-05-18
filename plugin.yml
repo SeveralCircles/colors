@@ -14,5 +14,5 @@ commands:
     usage: /<command>
 
   sans:
-    description: Spawns a skeleton.
-    usage: /<command>
+    description: Spawns a skeleton on a player.
+    usage: /<command> <player>
