@@ -1,7 +1,7 @@
 # Colors Plugin yml
 name: Colors
-main: com.severalcircles.colors.Main
-version: Red02
+main: com.severalcircles.colors.system.Main
+version: Red03
 authors: ["Several Circles", "Minotaur", "Beeg Mo"]
 
 commands:
@@ -12,7 +12,9 @@ commands:
   persona:
     description: Spams chat down with "Joker Persona" 3000 times.
     usage: /<command>
-
+  sans:
+    description: Spawns a skeleton on a player.
+    usage: /<command> <player>
   access:
     description: Spams the chat with "Ah Ah Ah! You didn't say the magic word!" 3000 times and spawns 3 primed tnt at a targets location.
     usage: /<command>
@@ -28,4 +30,7 @@ permissions:
     default: op
   com.severalcircles.colors.persona:
     description: Shows us your true form
+    default: op
+  com.severalcircles.colors.sans:
+    description: Allows you to give a player a bad time by sending a skeleton to their position because it's funny sans.
     default: op

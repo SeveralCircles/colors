@@ -1,6 +1,6 @@
 package com.severalcircles.colors.events;
 
-import com.severalcircles.colors.Main;
+import com.severalcircles.colors.system.Main;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
