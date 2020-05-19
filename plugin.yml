@@ -18,13 +18,20 @@ commands:
   access:
     description: Spams the chat with "Ah Ah Ah! You didn't say the magic word!" 3000 times and spawns 3 primed tnt.
     usage: /<command> <player>
-
+  pm:
+    description: Sends a private message to a player.
+    usage: /<command> <player> <message>
 permissions:
   com.severalcircles.colors.*:
     description: Gives all permissions
     default: op
     children:
       com.severalcircles.colors.magicword: true
+      com.severalcircles.colors.persona: true
+      com.severalcircles.sans: true
+  com.severalcircles.colors.message:
+    description: Allows you to send a private message to a player
+    default: true
   com.severalcircles.colors.magicword:
     description: Allows you to say the magic word
     default: op
