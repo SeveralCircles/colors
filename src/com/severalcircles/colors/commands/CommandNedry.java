@@ -19,12 +19,10 @@ public class CommandNedry implements CommandExecutor {
             System.out.println("Player not found");
             return true;
         }
-        if (isPlayer) {
-            if (!player.hasPermission("com.severalcircles.colors.magicword")) {
-                player.sendMessage(ChatColor.YELLOW + "Ah Ah Ah! You didn't say the magic word!");
-            }
+        if (!player.hasPermission("com.severalcircles.colors.magicword")) {
+            player.sendMessage(ChatColor.YELLOW + "Ah Ah Ah! You didn't say the magic word!");
         }
-        int tnt = 0
+        int tnt = 0;
         while (tnt < 3) {
             target.getWorld().spawnEntity(player.getLocation(), EntityType.PRIMED_TNT);
             tnt++;
