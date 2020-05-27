@@ -12,8 +12,10 @@ import java.net.URL;
 
 public class Main extends JavaPlugin {
     public static int random;
+    public static Main plugin;
     @Override
     public void onEnable() {
+        plugin = this;
         try {
             System.out.println("Build number: " + classBuildTimeMillis());
         } catch (URISyntaxException e) {
