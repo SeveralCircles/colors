@@ -38,6 +38,7 @@ public class Main extends JavaPlugin {
                     getConfig().set("records.secondsAlive", secondsAlive);
                 }
                 if (sendAliveRecord) {
+                    sendAliveRecord = false;
                     RecordKeeper.newRecord(Record.SERVER_ONLINE, secondsAlive);
                 }
 
