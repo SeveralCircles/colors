@@ -5,11 +5,14 @@ import com.severalcircles.colors.commands.CommandNedry;
 import com.severalcircles.colors.commands.CommandPersona;
 import com.severalcircles.colors.commands.CommandSans;
 import com.severalcircles.colors.events.ChatEvent;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.time.LocalDateTime;
 
 public class Main extends JavaPlugin {
     public static int random;
@@ -20,6 +23,15 @@ public class Main extends JavaPlugin {
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
+        System.out.println("Getting ready...");
+        Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
+            public void run() {
+                LocalDateTime l = LocalDateTime.now();
+                if (l.getHour() == 0 && l.getMinute() == 0 && l.getSecond() == 0) {
+                    Bukkit.broadcastMessage(ChatColor.BLUE + "Hey! It's a new day! Let's make the most of it!");
+                }
+            }
+        }, 20, 200);
         System.out.println("Setting up config...");
         this.saveDefaultConfig();
         System.out.println("Loading config...");
