@@ -18,6 +18,9 @@ commands:
   access:
     description: Spams the chat with "Ah Ah Ah! You didn't say the magic word!" 3000 times and spawns 3 primed tnt.
     usage: /<command> <player>
+  hocuspocus:
+      description: Gives you "fun" random effects. It's a suprise mechanic.
+      usage: /<command>
 
 permissions:
   com.severalcircles.colors.*:
