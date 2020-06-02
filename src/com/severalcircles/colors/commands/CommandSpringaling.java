@@ -6,7 +6,6 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.event.player.PlayerPortalEvent;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
@@ -23,10 +22,11 @@ public class CommandSpringaling implements CommandExecutor {
         }
         if (!player.hasPermission("com.severalcircles.colors.spring")) {
             player.sendMessage(ChatColor.YELLOW + "Argumento incorecto");
+            return true;
         }
         target.setHealth(1.0);
         target.sendMessage(ChatColor.DARK_RED + "You have been selected for the spring boi experience. DONT JUMP!");
-        new PotionEffect(PotionEffectType.JUMP, 12000, 100);
+        player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 12000, 100));
         return true;
     }
 

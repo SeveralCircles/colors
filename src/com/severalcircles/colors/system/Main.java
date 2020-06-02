@@ -1,9 +1,6 @@
 package com.severalcircles.colors.system;
 
-import com.severalcircles.colors.commands.CommandAbout;
-import com.severalcircles.colors.commands.CommandNedry;
-import com.severalcircles.colors.commands.CommandPersona;
-import com.severalcircles.colors.commands.CommandSans;
+import com.severalcircles.colors.commands.*;
 import com.severalcircles.colors.events.ChatEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -33,6 +30,7 @@ public class Main extends JavaPlugin {
         this.getCommand("persona").setExecutor(new CommandPersona());
         this.getCommand("sans").setExecutor(new CommandSans());
         this.getCommand("access").setExecutor(new CommandNedry());
+        this.getCommand("spring").setExecutor(new CommandSpringaling());
         this.getPluginLoader().createRegisteredListeners(new ChatEvent(), this);
     }
 
