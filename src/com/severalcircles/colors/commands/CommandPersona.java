@@ -18,6 +18,8 @@ public class CommandPersona implements CommandExecutor {
                 chatspam++;
             }
             return true;
+        } else {
+            player.sendMessage("Ah ah ah! You didn't say the magic word");
         }
         return true;
     }
