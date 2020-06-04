@@ -1,5 +1,8 @@
 package com.severalcircles.colors.system;
 
+
+import com.severalcircles.colors.commands.*;
+
 import com.severalcircles.colors.commands.CommandAbout;
 import com.severalcircles.colors.commands.CommandNedry;
 import com.severalcircles.colors.commands.CommandPersona;
@@ -9,6 +12,7 @@ import com.severalcircles.colors.system.records.Record;
 import com.severalcircles.colors.system.records.RecordKeeper;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -61,7 +65,11 @@ public class Main extends JavaPlugin {
         this.getCommand("persona").setExecutor(new CommandPersona());
         this.getCommand("sans").setExecutor(new CommandSans());
         this.getCommand("access").setExecutor(new CommandNedry());
+
+        this.getCommand("hocuspocus").setExecutor(new CommandUnknown());
+
         this.getPluginLoader().createRegisteredListeners(new ChatEvent(), this);
+
     }
 
     @Override
