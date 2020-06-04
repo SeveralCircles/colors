@@ -10,7 +10,7 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 public class ChatEvent implements Listener {
     @EventHandler
     public void onPlayerChat(AsyncPlayerChatEvent event) {
-
+        System.out.println("Chat event triggered");
         Player player = event.getPlayer();
         if ((int) Math.round(Math.random() * Main.random) == 69) {
             player.sendMessage(ChatColor.GOLD + "Jesus loves you");
