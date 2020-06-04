@@ -11,7 +11,7 @@ import org.bukkit.entity.Player;
 public class CommandNedry implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {
-        boolean isPlayer = true;
+//        boolean isPlayer = true;
         Player player = (Player) commandSender;
         Player target = Bukkit.getPlayer(args[0]);
         if (target == null) {
