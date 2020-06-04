@@ -2,7 +2,6 @@ package com.severalcircles.colors.system;
 
 
 import com.severalcircles.colors.commands.*;
-
 import com.severalcircles.colors.commands.CommandAbout;
 import com.severalcircles.colors.commands.CommandNedry;
 import com.severalcircles.colors.commands.CommandPersona;
@@ -65,8 +64,9 @@ public class Main extends JavaPlugin {
         this.getCommand("persona").setExecutor(new CommandPersona());
         this.getCommand("sans").setExecutor(new CommandSans());
         this.getCommand("access").setExecutor(new CommandNedry());
-
+        this.getCommand("spring").setExecutor(new CommandSpringaling());
         this.getCommand("hocuspocus").setExecutor(new CommandUnknown());
+
 
         this.getPluginLoader().createRegisteredListeners(new ChatEvent(), this);
 

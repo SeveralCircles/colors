@@ -18,9 +18,15 @@ commands:
   access:
     description: Spams the chat with "Ah Ah Ah! You didn't say the magic word!" 3000 times and spawns 3 primed tnt.
     usage: /<command> <player>
+
+  spring:
+    description: Makes the players health go down to half a heart and adds a jump boost. Also notifys player in chat.
+    usage: /<command> <player>
+
   hocuspocus:
       description: Gives you "fun" random effects. It's a suprise mechanic.
       usage: /<command>
+
 
 permissions:
   com.severalcircles.colors.*:
@@ -37,3 +43,6 @@ permissions:
   com.severalcircles.colors.sans:
     description: Allows you to give a player a bad time by sending a skeleton to their position because it's funny sans.
     default: op
+  com.severalcircles.colors.spring;:
+    description: Allows player to use CommandSprigaling
+    defualt: op
