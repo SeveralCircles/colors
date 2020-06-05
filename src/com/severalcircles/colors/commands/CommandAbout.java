@@ -13,7 +13,7 @@ public class CommandAbout implements CommandExecutor {
         // Casts the instance of commandSender to an instance of Player to give us more options
         Player player = (Player) commandSender;
 
-        player.sendMessage(ChatColor.GOLD + "Colors\n" + ChatColor.DARK_RED + "Version: Red 3\n" + ChatColor.GREEN + "By Aidan, Mo and Tyler, May 2020");
+        player.sendMessage(ChatColor.GOLD + "Colors\n" + ChatColor.RED + "Version: Orange 1\n" + ChatColor.GREEN + "By Aidan, Mo and Tyler, May 2020");
         return true;
     }
 }
