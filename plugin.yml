@@ -1,7 +1,7 @@
 # Colors Plugin yml
 name: Colors
 main: com.severalcircles.colors.system.Main
-version: Red03
+version: Orange01
 authors: ["Several Circles", "Minotaur", "Beeg Mo"]
 
 commands:
