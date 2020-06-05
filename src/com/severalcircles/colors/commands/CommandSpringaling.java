@@ -21,12 +21,12 @@ public class CommandSpringaling implements CommandExecutor {
             return true;
         }
         if (!player.hasPermission("com.severalcircles.colors.spring")) {
-            player.sendMessage(ChatColor.YELLOW + "Argumento incorecto");
+            player.sendMessage(ChatColor.YELLOW + "Ah Ah Ah! You didn't say the magic word!");
             return true;
         }
         target.setHealth(1.0);
         target.sendMessage(ChatColor.DARK_RED + "You have been selected for the spring boi experience. DONT JUMP!");
-        player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 12000, 100));
+        player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 12000, 10));
         return true;
     }
 
