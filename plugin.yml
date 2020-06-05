@@ -43,6 +43,6 @@ permissions:
   com.severalcircles.colors.sans:
     description: Allows you to give a player a bad time by sending a skeleton to their position because it's funny sans.
     default: op
-  com.severalcircles.colors.spring;:
+  com.severalcircles.colors.spring:
     description: Allows player to use CommandSprigaling
     defualt: op
